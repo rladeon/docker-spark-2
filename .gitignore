@@ -1,0 +1,3 @@
+#exclude conf and data directories
+**/conf
+**/data

@@ -23,3 +23,4 @@ ENV PATH $PATH:${SPARK_HOME}/bin
 RUN curl -s ${SPARK_ARCHIVE} | tar -xz -C /usr/local/
 
 WORKDIR $SPARK_HOME
+
