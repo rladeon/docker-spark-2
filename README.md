@@ -11,6 +11,6 @@ $ docker-compose up
 
 La commande précédente lit le contenu du fichier docker-compose.yml
 
-## @dresse du DNS
+## @dresse du DNS du fichier docker-compose.yml
 
  SPARK_PUBLIC_DNS: localhost à remplacer par  SPARK_PUBLIC_DNS: votre adresse DNS
