@@ -10,3 +10,7 @@ $ docker build -t nomcontainer .
 $ docker-compose up
 
 La commande précédente lit le contenu du fichier docker-compose.yml
+
+## @dresse du DNS
+
+ SPARK_PUBLIC_DNS: localhost à remplacer par  SPARK_PUBLIC_DNS: votre adresse DNS
