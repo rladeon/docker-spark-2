@@ -3,12 +3,12 @@ FROM ubuntu:16.04
 RUN apt-get -y update
 RUN apt-get -y install curl
 
-####installing [software-properties-common] so that we can use [apt-add-repository] to add the repository [ppa:webupd8team/java] form which we install Java8
+#### installing [software-properties-common] so that we can use [apt-add-repository] to add the repository [ppa:webupd8team/java] form which we install Java8
 RUN apt-get install software-properties-common -y
 RUN apt-add-repository ppa:webupd8team/java -y
 RUN apt-get update -y
  
-####automatically agreeing on oracle license agreement that normally pops up while installing java8
+#### automatically agreeing on oracle license agreement that normally pops up while installing java8
 RUN echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections
 RUN echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections
  
